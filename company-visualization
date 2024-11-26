@@ -1,0 +1,26 @@
+# Navigate to your file location
+cd /Users/dyn/Desktop/MT-data/Final\ Result/
+
+# Create a new directory for the website
+mkdir company-visualization
+cd company-visualization
+
+# Copy your HTML file into this new directory
+cp file:///Users/dyn/Desktop/MT-data/Final%20Result/pca_with_search.html index.html
+
+# Initialize git repository
+git init
+
+# Add your files
+git add index.html
+
+# Commit the files
+git commit -m "Initial commit: Adding visualization"
+
+# Add your GitHub repository as remote
+# Replace YOUR-USERNAME with your GitHub username
+git remote add origin https://github.com/dyn/company-visualization.git
+
+# Push the files
+git branch -M main
+git push -u origin main
